@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (1.1.4)
+  - Nimble (0.4.1)
+  - Quick (0.3.0)
+
+DEPENDENCIES:
+  - Alamofire (from `git@github.com:Alamofire/Alamofire.git`, branch `xcode-6.3`)
+  - Nimble
+  - Quick
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :branch: xcode-6.3
+    :git: git@github.com:Alamofire/Alamofire.git
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: 2ff5749ffc0425f05a1411b5b6fd2c25241b5b14
+    :git: git@github.com:Alamofire/Alamofire.git
+
+SPEC CHECKSUMS:
+  Alamofire: 6a2cbaebe78a6d469bc55ee37f0a24ba22af76ac
+  Nimble: 36913d5c822a29b3ace4113c197c79eb766a3615
+  Quick: 91a8e2ee5bb25eff88ebd0e7553abf728a5ac9bd
+
+COCOAPODS: 0.36.0
