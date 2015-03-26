@@ -10,7 +10,7 @@ import Quick
 import Nimble
 import Huebert
 
-class HuebertTests: QuickSpec {
+class HueBridgeTests: QuickSpec {
     override func spec() {
         describe("HueBridge") {
             let bridge = HueBridge()

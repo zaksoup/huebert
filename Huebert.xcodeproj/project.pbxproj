@@ -12,6 +12,7 @@
 		3111CDF01AC4AA3D004F67EE /* Huebert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3111CDE41AC4AA3D004F67EE /* Huebert.framework */; };
 		3111CDF71AC4AA3D004F67EE /* HuebertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111CDF61AC4AA3D004F67EE /* HuebertTests.swift */; };
 		3139A5631AC4AB79005D92E7 /* Huebert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3139A5621AC4AB79005D92E7 /* Huebert.swift */; };
+		3139A5651AC4B1C4005D92E7 /* BridgeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3139A5641AC4B1C4005D92E7 /* BridgeService.swift */; };
 		3B58D8C9D7C11DB41210F57C /* Pods_Huebert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA50152289DFD718C3F464D /* Pods_Huebert.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		3111CDF51AC4AA3D004F67EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3111CDF61AC4AA3D004F67EE /* HuebertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuebertTests.swift; sourceTree = "<group>"; };
 		3139A5621AC4AB79005D92E7 /* Huebert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Huebert.swift; sourceTree = "<group>"; };
+		3139A5641AC4B1C4005D92E7 /* BridgeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeService.swift; sourceTree = "<group>"; };
 		48B999E31BD6550CB3DE8A30 /* Pods-Huebert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Huebert.release.xcconfig"; path = "Pods/Target Support Files/Pods-Huebert/Pods-Huebert.release.xcconfig"; sourceTree = "<group>"; };
 		6B6B3FFC50E0BEBEF476B783 /* Pods_HuebertTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuebertTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C4EE56F6B4076A8964ED36 /* Pods-HuebertTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuebertTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HuebertTests/Pods-HuebertTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				3111CDE91AC4AA3D004F67EE /* Huebert.h */,
 				3111CDE71AC4AA3D004F67EE /* Supporting Files */,
 				3139A5621AC4AB79005D92E7 /* Huebert.swift */,
+				3139A5641AC4B1C4005D92E7 /* BridgeService.swift */,
 			);
 			path = Huebert;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3139A5651AC4B1C4005D92E7 /* BridgeService.swift in Sources */,
 				3139A5631AC4AB79005D92E7 /* Huebert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

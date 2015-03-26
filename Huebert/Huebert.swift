@@ -7,10 +7,12 @@
 //
 
 import Foundation
-import Alamofire
 
 public class HueBridge {
+    let host = "http://0.0.0.0:8000"
     public init() {
         print("made a bridge")
     }
+    
+    
 }
