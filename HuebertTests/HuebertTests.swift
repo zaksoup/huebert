@@ -9,15 +9,19 @@
 import Quick
 import Nimble
 import Huebert
-
+import Mockingjay
 
 class HueBridgeTests: QuickSpec {
     override func spec() {
         describe("HueBridge") {
-            let bridge = HueBridge()
         
-            it("") {
-                
+            beforeEach() {
+                stub(http(.GET, "/zak"), builder: json(["awesome": true]))
+            }
+            
+            it("mocks stuff") {
+               let bridge = HueBridge()
+               expect(bridge.zak).to(beTrue())
             }
         }
     }

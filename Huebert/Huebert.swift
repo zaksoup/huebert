@@ -7,11 +7,17 @@
 //
 
 import Foundation
+import Alamofire
 
 public class HueBridge {
     let host = "http://0.0.0.0:8000"
+    public var zak = false
     public init() {
-        print("made a bridge")
+        Alamofire.request(.GET, "http://whatever.com/zak").responseJSON { (_, _, json, _) in
+            let dict = json as! Dictionary<String, AnyObject>
+            print(dict)
+            self.zak = dict["awesome"]! as! Bool
+        }
     }
     
     
