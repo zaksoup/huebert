@@ -10,5 +10,6 @@ target 'HuebertTests' do
   pod 'Alamofire', :git => "git@github.com:Alamofire/Alamofire.git", :branch => 'xcode-6.3'
   pod 'Quick'
   pod 'Nimble'
+  pod 'Mockingjay'
 end
 

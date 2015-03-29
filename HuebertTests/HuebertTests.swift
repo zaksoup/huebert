@@ -10,12 +10,14 @@ import Quick
 import Nimble
 import Huebert
 
+
 class HueBridgeTests: QuickSpec {
     override func spec() {
         describe("HueBridge") {
             let bridge = HueBridge()
-            it("tells me I am awesome!") {
-                expect(bridge.zak).to(equal("awesome"))
+        
+            it("") {
+                
             }
         }
     }

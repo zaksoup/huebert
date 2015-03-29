@@ -1,0 +1,6 @@
+framework module Mockingjay {
+  umbrella header "Pods-HuebertTests-Mockingjay-umbrella.h"
+
+  export *
+  module * { export * }
+}
