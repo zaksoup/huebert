@@ -14,14 +14,17 @@ import Mockingjay
 class HueBridgeTests: QuickSpec {
     override func spec() {
         describe("HueBridge") {
+               let bridge = HueBridge()
         
             beforeEach() {
-                stub(http(.GET, "/zak"), builder: json(["awesome": true]))
+                stub(http(.GET, "/zak"), builder: json(["awesome": false]))
             }
             
             it("mocks stuff") {
-               let bridge = HueBridge()
-               expect(bridge.zak).to(beTrue())
+                bridge.getZak({
+                   println("thing")
+                })
+                    expect(bridge.zak).toEventually(beTrue())
             }
         }
     }

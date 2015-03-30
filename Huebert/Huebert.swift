@@ -13,10 +13,12 @@ public class HueBridge {
     let host = "http://0.0.0.0:8000"
     public var zak = false
     public init() {
-        Alamofire.request(.GET, "http://whatever.com/zak").responseJSON { (_, _, json, _) in
-            let dict = json as! Dictionary<String, AnyObject>
-            print(dict)
-            self.zak = dict["awesome"]! as! Bool
+    }
+    public func getZak(completionHandler: () -> () ) {
+        Alamofire.request(.GET, "http://zak.com/zak").responseJSON { (_, _, json, _) in
+            let val = json as! [String: AnyObject]
+            self.zak = val["awesome"] as! Bool
+            completionHandler()
         }
     }
     
