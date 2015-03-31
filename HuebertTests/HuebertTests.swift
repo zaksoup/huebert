@@ -14,17 +14,48 @@ import Mockingjay
 class HueBridgeTests: QuickSpec {
     override func spec() {
         describe("HueBridge") {
-               let bridge = HueBridge()
-        
+            let bridge = HueBridge()
+            
             beforeEach() {
-                stub(http(.GET, "/zak"), builder: json(["awesome": false]))
             }
             
-            it("mocks stuff") {
-                bridge.getZak({
-                   println("thing")
-                })
-                    expect(bridge.zak).toEventually(beTrue())
+            describe("connect()") {
+                
+                beforeEach() {
+                    
+                }
+                
+                context("when the bridge button has been pressed") {
+                    beforeEach() {
+                        let expectedResponse = [
+                            ["success":
+                                [
+                                    "username": "some uuid"
+                                ]
+                            ]
+                        ]
+                        let errorResponse = [
+                            ["errors":
+                                [
+                                    "address": "",
+                                    "description": "link button not pressed",
+                                    "type": "101"
+                                ]
+                            ]
+                        ]
+                        self.stub(http(.POST, "/api"), builder: json(expectedResponse))
+                    }
+                    
+                    it("connects to the bridge") {
+                        bridge.connect()
+                        expect(bridge.connected).toEventually(beTrue())
+                        
+                    }
+                }
+                
+                context("when the bridge button has not been pressed") {
+                    
+                }
             }
         }
     }
